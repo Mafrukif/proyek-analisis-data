@@ -1,4 +1,4 @@
-# Proyek-analisis-data
+# proyek-analisis-data
 ## Clone Repository ke Lokal
 ```bash
 git clone https://github.com/username/analisis-sepeda.git
