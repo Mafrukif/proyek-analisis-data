@@ -1,23 +1,20 @@
 # proyek-analisis-data
-## Clone Repository ke Lokal
+## Setup Environment Pyhton - Visual Studio Code
 ```bash
-git clone https://github.com/username/analisis-sepeda.git
-cd analisis-sepeda
+python -m venv venv
+venv\Scripts\activate
+
 ```
-## Tambahkan Program
+## Setup Environment - Shell/Terminal
 ```bash
-streamlit
-pandas
-seaborn
-matplotlib
+python --version
+python -m venv venv
+venv\Scripts\activate
+pip install requests
+pip install -r requirements.txt
 ```
-## Tambahkan dan Commit Perubahan
-```bash
-git add .
-git commit -m "Menambahkan analisis penyewaan sepeda dengan Streamlit"
-git push origin main
-```
-## Jalankan Aplikasi
+
+## Run steamlit app
 ```bash
 streamlit run dashboard.py
 ```
