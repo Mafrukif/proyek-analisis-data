@@ -10,7 +10,7 @@ st.set_page_config(page_title="📊 Analisis Penyewaan Sepeda", layout="centered
 # Fungsi untuk membaca dataset
 @st.cache_data
 def load_data_day():
-    file_path = "D:/dicoding/Submission/data/day.csv"
+    file_path = "day.csv"
     
     if not os.path.exists(file_path):
         st.error(f"⚠ File tidak ditemukan: {file_path}")
@@ -22,7 +22,7 @@ def load_data_day():
 
 @st.cache_data  
 def load_data_hour():
-    file_path = "D:/dicoding/Submission/data/hour.csv"
+    file_path = "hour.csv"
     
     if not os.path.exists(file_path):
         st.error(f"⚠ File tidak ditemukan: {file_path}")
