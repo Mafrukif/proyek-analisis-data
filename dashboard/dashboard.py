@@ -87,11 +87,7 @@ hour_filtered = hour_df[(hour_df["dteday"] >= start_date) & (hour_df["dteday"] <
 if not hour_filtered.empty:
     hourly_avg = hour_filtered.groupby("hr")["cnt"].mean()
     peak_hour = hourly_avg.idxmax()
-    low_hour = hourly_avg.idxmin()
-    
-    st.write(f"🚲 Jam dengan penyewaan tertinggi: **{peak_hour}:00**")
-    st.write(f"🚲 Jam dengan penyewaan terendah: **{low_hour}:00**")
-    
+    low_hour = hourly_avg.idxmin() 
     fig, ax = plt.subplots(figsize=(10, 4))
     ax.plot(hourly_avg.index, hourly_avg.values, marker='o', linestyle='-', color='blue', label="Avg Rentals per Hour")
     ax.set_title("Rata-rata Penyewaan Sepeda per Jam", fontsize=12)
